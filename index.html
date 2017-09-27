@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Unnamed App</title>
+        <link href="css/leaflet.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            html,body {
+                height: 100%;
+                margin: 0;
+            }
+            
+            
+            #map {
+                min-height: 100%;
+                
+            }
+            .btn-danger{
+                margin-left: 20px;
+                margin-bottom: 20px;
+            }  
+
+                .leaflet-container.crosshair-cursor-enabled {
+    cursor:crosshair;
+}
+        </style>
+    </head>
+    <body>
+    <div id="map">
+            
+    
+        
+    </div>
+    <div class="modal fade" id="firstModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 id="featureName" class="modal-title" ></h3>
+            
+          </div>
+          <div class="modal-body">
+            <div class="text-center">
+            <img id="modal_image" src="#" class="img-responsive img-fluid">
+            </div>
+              <hr>
+            
+          </div>
+          
+            
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            
+            
+            
+          
+        </div>
+      </div>
+    </div>
+        <!--- Video Modal --->
+    <div class="modal fade" id="setting" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+            <input id="markername" class="form-control form-control" type="text" placeholder="Enter Name">
+            <p />
+            <input id="markerimage" class="form-control form-control" type="text" placeholder="Image Url">
+            <button type="button" class="btn btn-success" id="settingbutton" data-dismiss="modal">insert</button>
+            
+          </div>
+          </div>
+        </div>
+    </div>
+    
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="bundle.js"></script>
+        
+    </body>
+  
+</html>
